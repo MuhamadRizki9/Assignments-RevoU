@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="background">
@@ -15,19 +14,20 @@
             <div id="kalkulator_suhu">
                 <p>Celcius (°C):</p>
                 <div class="input-box">
-                    <input type="text" id="celcius" name="celcius" placeholder="Masukkan Derajat Celcius"/>
+                    <input type="text" id="celcius" name="c" placeholder="Masukkan Derajat Celcius" value="">
                 </div>
-                <button class="btn_konversi" type="button" id="btnKonversi" onclick="konversiCelciusdanFahrenheit()">Konversi</button>
+                <button class="btn_konversi" type="button" id="konversi">Konversi</button>
                 <button class="btn_reset" type="reset" id="reset">Reset</button>
-                <button class="btn_reverse">Reverse</button>
+                <button class="btn_reverse" type="reverse" id="reverse">Reverse</button>
                 <p>Fahrenheit (°F):</p>
                 <div class="input-box">
-                    <input type="text" id="fahrenheit" name="fahrenheit">
+                    <input type="text" id="fahrenheit" name="f" value="">
                 </div>
                 <p>Cara Kalkulasi:</p>
                 <div class="input-box">
-                    <input id="cara_kalkulasi">
+                    <input id="kalkulasi" name="kal">
                 </div>
+                <script src="js/script.js"></script>
             </div>
         </div>
         <div class="kvr">
@@ -37,7 +37,7 @@
             <p>Suhu <i>S</i> dalam Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celcius (°C) kali 9/5 tambah 32.</p>
             <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> x 9/5) + 32</p>
             <p>atau</p>
-            <p><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> x 1.8) + 32</p>
+            <p style="padding: 0px 0px 20px;"><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> x 1.8) + 32</p>
         </div>
         
     </div>
