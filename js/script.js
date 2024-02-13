@@ -10,7 +10,7 @@ function tempConvert(){
         kalkulasi = parseInt(celcius) + "°C * (9/5) + 32 =" + fahrenheit + "°F";
     } else{
         celcius = (parseInt(fahrenheit) - 32) * 5/9;
-        kalkulasi = parseInt(fahrenheit) + "°C * (9/5) + 32 =" + celcius + "°F"; 
+        kalkulasi = parseInt(fahrenheit) + "°F - 32 * (5/9) =" + celcius + "°C"; 
     }
 
     document.getElementById("celcius").value = parseInt(celcius).toFixed(1);
